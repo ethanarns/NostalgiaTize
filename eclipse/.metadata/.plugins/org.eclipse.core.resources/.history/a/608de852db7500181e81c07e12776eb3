@@ -1,0 +1,122 @@
+package com.ethanarns.nostalgiatize;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import com.mojang.realmsclient.gui.ChatFormatting;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.network.NetworkPlayerInfo;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.Style;
+import net.minecraft.util.text.TextComponentBase;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.BossInfo.Color;
+import net.minecraftforge.client.event.ClientChatReceivedEvent;
+import net.minecraftforge.fml.common.FMLCommonHandler;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+public class ChatListener {
+	
+	public ArrayList<String> pNames = new ArrayList<String>();
+	
+	@SubscribeEvent
+	public void onChatMessage(ClientChatReceivedEvent event) {
+		// Experimenting:
+		List<EntityPlayer> entities = Minecraft.getMinecraft().world.playerEntities;
+		for(EntityPlayer x : entities) {
+			System.out.print(x.getName() + " ");
+		}
+		System.out.println();
+		
+		addPlayerToList(Minecraft.getMinecraft().player.getName());
+		// Get an ArrayList of player names
+		updatePlayerList();
+		
+		if(event.getMessage() == null || event.getMessage().getUnformattedText() == null) {
+			System.out.println("*ERROR*:event.getMessage() returned null value!");
+			return;
+		}
+		
+		System.out.println("Would be if unformatted: " + event.getMessage().getUnformattedText());
+		
+		// Works!
+		String messageText = event.getMessage().getUnformattedText().trim();
+		if(messageText.indexOf("[Server]") != -1) {
+			//System.out.println("*ALERT*: Server message! Important! Do not touch!");
+			event.setMessage(event.getMessage());
+			return;
+		}
+		
+		// Get the earliest name
+		int bestIndex = -1;
+		String bestName = "";
+		for(String x : pNames) {
+			if(messageText.indexOf(x) != -1) {
+				if(bestIndex == -1) {
+					bestIndex = messageText.indexOf(x);
+					bestName = x;
+				}
+				else {
+					// There's already a record. Check if it's beaten
+					if(messageText.indexOf(x) < bestIndex) {
+						bestName = x;
+						bestIndex = messageText.indexOf(x);
+					}
+				}
+			}
+		}
+		// We either have the earliest name's index, or an index of -1 if none found
+		
+		//System.out.println(pNames);
+		
+		if(bestIndex == -1) {
+			// No name, so just send off a colorless echo
+			System.out.println("*ALERT*: No name found. Must be misc.");
+			event.setMessage(new TextComponentString(messageText));
+			return;
+		}
+		else if(bestIndex == 0) {
+			// Death or connection most likely
+			if(messageText.indexOf("joined") != -1 || messageText.indexOf("left the game") != -1)
+				event.setMessage(new TextComponentString(ChatFormatting.YELLOW + messageText));
+			else
+				event.setMessage(new TextComponentString(messageText));
+			return;
+		}
+		else {
+			// Now for chat! bestName is the current likely candidate for player name
+			bestName = "<" + bestName + ">";
+			//event.setMessage(new TextComponentString("Most likely chat: " + messageText));
+			event.setMessage(new TextComponentString(bestName));
+			return;
+		}
+	}
+	
+	
+	public void updatePlayerList() {
+		if(Minecraft.getMinecraft().getConnection().getPlayerInfoMap() == null) {
+			System.out.println("*ERROR*: getPlayerInfoMap() returned NULL!");
+			return;
+		}
+		Iterator<NetworkPlayerInfo> i = Minecraft.getMinecraft().getConnection().getPlayerInfoMap().iterator();
+		while(i.hasNext()) {
+			NetworkPlayerInfo element = i.next();
+			
+			String curPlayerName = Minecraft.getMinecraft().ingameGUI.getTabList().getPlayerName(element);
+			if(curPlayerName != null) {
+				if(!pNames.contains(curPlayerName))
+					pNames.add(curPlayerName);
+			}
+		}
+	}
+	
+	public void addPlayerToList(String p) {
+		if(!pNames.contains(p))
+			pNames.add(p);
+	}
+
+}

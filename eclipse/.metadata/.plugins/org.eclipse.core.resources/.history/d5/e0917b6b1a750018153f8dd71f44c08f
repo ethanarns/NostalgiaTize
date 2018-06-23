@@ -1,0 +1,16 @@
+[
+{
+  "modid": "eant",
+  "name": "NostalgiaTizer Mod",
+  "description": "Bring back some sweet nostalgia.",
+  "version": "1.0",
+  "mcversion": "$1.12.2",
+  "url": "minecraft.ethanarns.com",
+  "updateUrl": "",
+  "authorList": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,8 @@
+package com.ethanarns.nostalgiatize;
+
+import net.minecraftforge.fml.common.Mod;
+
+@Mod(modid = ModInfo.MOD_ID, name = ModInfo.NAME, version = ModInfo.VERSION, acceptedMinecraftVersions = ModInfo.ACCEPTED_VERSIONS);
+public class NostalgiaTize {
+	
+}

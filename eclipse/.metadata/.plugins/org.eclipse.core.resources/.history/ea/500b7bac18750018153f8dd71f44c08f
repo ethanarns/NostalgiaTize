@@ -1,0 +1,7 @@
+package com.ethanarns.nostalgiatize;
+
+public class NostalgiaTize {
+
+@mod(modid = ModInfo.M)
+	
+}

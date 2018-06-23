@@ -1,0 +1,229 @@
+Symbol range map extraction starting
+Processing 6 files
+startProcessing "com\ethanarns\nostalgiatize\ChatListener.java" md5: 8a870263e2deb7c097302a732ea6c997
+@|com\ethanarns\nostalgiatize\ChatListener.java|8|35|com.ethanarns.nostalgiatize|package|com.ethanarns.nostalgiatize|(file)
+Class Start: com.ethanarns.nostalgiatize.ChatListener
+   @|com\ethanarns\nostalgiatize\ChatListener.java|788|800|ChatListener|class|com.ethanarns.nostalgiatize.ChatListener
+   @|com\ethanarns\nostalgiatize\ChatListener.java|823|829|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ChatListener.java|813|822|ArrayList|class|java.util.ArrayList
+   @|com\ethanarns\nostalgiatize\ChatListener.java|813|822|ArrayList|class|java.util.ArrayList
+   @|com\ethanarns\nostalgiatize\ChatListener.java|823|829|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ChatListener.java|831|837|pNames|field|com.ethanarns.nostalgiatize.ChatListener|pNames|
+   @|com\ethanarns\nostalgiatize\ChatListener.java|844|853|ArrayList|class|java.util.ArrayList
+   @|com\ethanarns\nostalgiatize\ChatListener.java|854|860|String|class|java.lang.String
+   Method Start: onChatMessage(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|935|940|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|869|883|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\ethanarns\nostalgiatize\ChatListener.java|897|910|onChatMessage|method|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|911|934|ClientChatReceivedEvent|class|net.minecraftforge.client.event.ClientChatReceivedEvent
+      @|com\ethanarns\nostalgiatize\ChatListener.java|948|963|addPlayerToList|method|com.ethanarns.nostalgiatize.ChatListener|addPlayerToList|(Ljava/lang/String;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|964|973|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\ethanarns\nostalgiatize\ChatListener.java|974|986|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|989|995|player|field|net.minecraft.client.Minecraft|player
+      @|com\ethanarns\nostalgiatize\ChatListener.java|996|1003|getName|method|net.minecraft.command.ICommandSender|getName|()Ljava/lang/String;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1051|1067|updatePlayerList|method|com.ethanarns.nostalgiatize.ChatListener|updatePlayerList|()V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1076|1081|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1082|1092|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1106|1111|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1112|1122|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1125|1143|getUnformattedText|method|net.minecraft.util.text.ITextComponent|getUnformattedText|()Ljava/lang/String;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1160|1166|System|class|java.lang.System
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1167|1170|out|field|java.lang.System|out
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1171|1178|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1252|1258|System|class|java.lang.System
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1259|1262|out|field|java.lang.System|out
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1263|1270|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1301|1306|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1307|1317|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1320|1338|getUnformattedText|method|net.minecraft.util.text.ITextComponent|getUnformattedText|()Ljava/lang/String;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1360|1366|String|class|java.lang.String
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1381|1386|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1387|1397|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1400|1418|getUnformattedText|method|net.minecraft.util.text.ITextComponent|getUnformattedText|()Ljava/lang/String;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1421|1425|trim|method|java.lang.String|trim|()Ljava/lang/String;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1446|1453|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1556|1561|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1562|1572|setMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|setMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1573|1578|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1579|1589|getMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|getMessage|()Lnet/minecraft/util/text/ITextComponent;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1663|1669|String|class|java.lang.String
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1691|1697|String|class|java.lang.String
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1702|1708|pNames|field|com.ethanarns.nostalgiatize.ChatListener|pNames
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1730|1737|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1805|1812|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\ethanarns\nostalgiatize\ChatListener.java|1928|1935|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2004|2011|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2195|2201|System|class|java.lang.System
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2202|2205|out|field|java.lang.System|out
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2206|2213|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2259|2264|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2265|2275|setMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|setMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2280|2299|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2413|2420|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2452|2459|indexOf|method|java.lang.String|indexOf|(Ljava/lang/String;)I
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2488|2493|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2494|2504|setMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|setMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2509|2528|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2529|2543|ChatFormatting|class|com.mojang.realmsclient.gui.ChatFormatting
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2544|2550|YELLOW|field|com.mojang.realmsclient.gui.ChatFormatting|YELLOW
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2580|2585|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2586|2596|setMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|setMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2601|2620|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2809|2814|event|param|com.ethanarns.nostalgiatize.ChatListener|onChatMessage|(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2815|2825|setMessage|method|net.minecraftforge.client.event.ClientChatReceivedEvent|setMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2830|2849|TextComponentString|class|net.minecraft.util.text.TextComponentString
+   Method End: onChatMessage(Lnet/minecraftforge/client/event/ClientChatReceivedEvent;)V
+   Method Start: updatePlayerList()V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2897|2913|updatePlayerList|method|com.ethanarns.nostalgiatize.ChatListener|updatePlayerList|()V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2923|2932|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2933|2945|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2948|2961|getConnection|method|net.minecraft.client.Minecraft|getConnection|()Lnet/minecraft/client/network/NetHandlerPlayClient;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2964|2980|getPlayerInfoMap|method|net.minecraft.client.network.NetHandlerPlayClient|getPlayerInfoMap|()Ljava/util/Collection;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|2997|3003|System|class|java.lang.System
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3004|3007|out|field|java.lang.System|out
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3008|3015|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3080|3088|Iterator|class|java.util.Iterator
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3089|3106|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3112|3121|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3122|3134|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3137|3150|getConnection|method|net.minecraft.client.Minecraft|getConnection|()Lnet/minecraft/client/network/NetHandlerPlayClient;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3153|3169|getPlayerInfoMap|method|net.minecraft.client.network.NetHandlerPlayClient|getPlayerInfoMap|()Ljava/util/Collection;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3172|3180|iterator|method|java.lang.Iterable|iterator|()Ljava/util/Iterator;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3194|3201|hasNext|method|java.util.Iterator|hasNext|()Z
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3210|3227|NetworkPlayerInfo|class|net.minecraft.client.network.NetworkPlayerInfo
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3240|3244|next|method|java.util.Iterator|next|()Ljava/lang/Object;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3291|3297|String|class|java.lang.String
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3322|3336|getGameProfile|method|net.minecraft.client.network.NetworkPlayerInfo|getGameProfile|()Lcom/mojang/authlib/GameProfile;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3339|3346|getName|method|com.mojang.authlib.GameProfile|getName|()Ljava/lang/String;
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3389|3395|pNames|field|com.ethanarns.nostalgiatize.ChatListener|pNames
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3396|3404|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3426|3432|pNames|field|com.ethanarns.nostalgiatize.ChatListener|pNames
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3433|3436|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: updatePlayerList()V
+   Method Start: addPlayerToList(Ljava/lang/String;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3503|3504|p|param|com.ethanarns.nostalgiatize.ChatListener|addPlayerToList|(Ljava/lang/String;)V|p|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3480|3495|addPlayerToList|method|com.ethanarns.nostalgiatize.ChatListener|addPlayerToList|(Ljava/lang/String;)V
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3496|3502|String|class|java.lang.String
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3514|3520|pNames|field|com.ethanarns.nostalgiatize.ChatListener|pNames
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3521|3529|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3530|3531|p|param|com.ethanarns.nostalgiatize.ChatListener|addPlayerToList|(Ljava/lang/String;)V|p|0
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3537|3543|pNames|field|com.ethanarns.nostalgiatize.ChatListener|pNames
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3544|3547|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\ethanarns\nostalgiatize\ChatListener.java|3548|3549|p|param|com.ethanarns.nostalgiatize.ChatListener|addPlayerToList|(Ljava/lang/String;)V|p|0
+   Method End: addPlayerToList(Ljava/lang/String;)V
+Class End  : com.ethanarns.nostalgiatize.ChatListener
+endProcessing "com\ethanarns\nostalgiatize\ChatListener.java"
+
+startProcessing "com\ethanarns\nostalgiatize\ModInfo.java" md5: c2f14acdbc90e3decc08c6a713cc0de2
+Cache Hit!
+@|com\ethanarns\nostalgiatize\ModInfo.java|8|35|com.ethanarns.nostalgiatize|package|com.ethanarns.nostalgiatize|(file)
+Class Start: com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\ModInfo.java|51|58|ModInfo|class|com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\ModInfo.java|82|88|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|82|88|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|89|95|MOD_ID|field|com.ethanarns.nostalgiatize.ModInfo|MOD_ID|
+   @|com\ethanarns\nostalgiatize\ModInfo.java|127|133|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|127|133|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|134|138|NAME|field|com.ethanarns.nostalgiatize.ModInfo|NAME|
+   @|com\ethanarns\nostalgiatize\ModInfo.java|184|190|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|184|190|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|191|198|VERSION|field|com.ethanarns.nostalgiatize.ModInfo|VERSION|
+   @|com\ethanarns\nostalgiatize\ModInfo.java|229|235|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|229|235|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|236|253|ACCEPTED_VERSIONS|field|com.ethanarns.nostalgiatize.ModInfo|ACCEPTED_VERSIONS|
+   @|com\ethanarns\nostalgiatize\ModInfo.java|291|297|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|291|297|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|298|316|CLIENT_PROXY_CLASS|field|com.ethanarns.nostalgiatize.ModInfo|CLIENT_PROXY_CLASS|
+   @|com\ethanarns\nostalgiatize\ModInfo.java|389|395|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|389|395|String|class|java.lang.String
+   @|com\ethanarns\nostalgiatize\ModInfo.java|396|414|SERVER_PROXY_CLASS|field|com.ethanarns.nostalgiatize.ModInfo|SERVER_PROXY_CLASS|
+Class End  : com.ethanarns.nostalgiatize.ModInfo
+endProcessing "com\ethanarns\nostalgiatize\ModInfo.java"
+
+startProcessing "com\ethanarns\nostalgiatize\NostalgiaTize.java" md5: 7ec7c6ff1f3d66488d5c2d3ed2838de7
+Cache Hit!
+@|com\ethanarns\nostalgiatize\NostalgiaTize.java|8|35|com.ethanarns.nostalgiatize|package|com.ethanarns.nostalgiatize|(file)
+Class Start: com.ethanarns.nostalgiatize.NostalgiaTize
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|657|660|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|661|666|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|669|676|ModInfo|class|com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|677|683|MOD_ID|field|com.ethanarns.nostalgiatize.ModInfo|MOD_ID
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|685|689|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|692|699|ModInfo|class|com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|700|704|NAME|field|com.ethanarns.nostalgiatize.ModInfo|NAME
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|706|713|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|716|723|ModInfo|class|com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|724|731|VERSION|field|com.ethanarns.nostalgiatize.ModInfo|VERSION
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|733|758|acceptedMinecraftVersions|method|net.minecraftforge.fml.common.Mod|acceptedMinecraftVersions|()Ljava/lang/String;
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|761|768|ModInfo|class|com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|769|786|ACCEPTED_VERSIONS|field|com.ethanarns.nostalgiatize.ModInfo|ACCEPTED_VERSIONS
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|801|814|NostalgiaTize|class|com.ethanarns.nostalgiatize.NostalgiaTize
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|827|839|ChatListener|class|com.ethanarns.nostalgiatize.ChatListener
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|827|839|ChatListener|class|com.ethanarns.nostalgiatize.ChatListener
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|840|848|listener|field|com.ethanarns.nostalgiatize.NostalgiaTize|listener|
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|855|867|ChatListener|class|com.ethanarns.nostalgiatize.ChatListener
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|899|912|NostalgiaTize|class|com.ethanarns.nostalgiatize.NostalgiaTize
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|875|883|Instance|class|net.minecraftforge.fml.common.Mod.Instance
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|899|912|NostalgiaTize|class|com.ethanarns.nostalgiatize.NostalgiaTize
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|913|921|instance|field|com.ethanarns.nostalgiatize.NostalgiaTize|instance|
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1035|1046|CommonProxy|class|com.ethanarns.nostalgiatize.proxy.CommonProxy
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|927|937|SidedProxy|class|net.minecraftforge.fml.common.SidedProxy
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|938|948|clientSide|method|net.minecraftforge.fml.common.SidedProxy|clientSide|()Ljava/lang/String;
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|951|958|ModInfo|class|com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|959|977|CLIENT_PROXY_CLASS|field|com.ethanarns.nostalgiatize.ModInfo|CLIENT_PROXY_CLASS
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|979|989|serverSide|method|net.minecraftforge.fml.common.SidedProxy|serverSide|()Ljava/lang/String;
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|992|999|ModInfo|class|com.ethanarns.nostalgiatize.ModInfo
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1000|1018|SERVER_PROXY_CLASS|field|com.ethanarns.nostalgiatize.ModInfo|SERVER_PROXY_CLASS
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1035|1046|CommonProxy|class|com.ethanarns.nostalgiatize.proxy.CommonProxy
+   @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1047|1052|proxy|field|com.ethanarns.nostalgiatize.NostalgiaTize|proxy|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1118|1123|event|param|com.ethanarns.nostalgiatize.NostalgiaTize|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1058|1070|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1084|1091|preInit|method|com.ethanarns.nostalgiatize.NostalgiaTize|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1092|1117|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1129|1143|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1144|1153|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1154|1162|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1163|1171|listener|field|com.ethanarns.nostalgiatize.NostalgiaTize|listener
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: Init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1235|1240|event|param|com.ethanarns.nostalgiatize.NostalgiaTize|Init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1181|1193|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1207|1211|Init|method|com.ethanarns.nostalgiatize.NostalgiaTize|Init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1212|1234|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+   Method End: Init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1316|1321|event|param|com.ethanarns.nostalgiatize.NostalgiaTize|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1254|1266|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1280|1288|postInit|method|com.ethanarns.nostalgiatize.NostalgiaTize|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\ethanarns\nostalgiatize\NostalgiaTize.java|1289|1315|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.ethanarns.nostalgiatize.NostalgiaTize
+endProcessing "com\ethanarns\nostalgiatize\NostalgiaTize.java"
+
+startProcessing "com\ethanarns\nostalgiatize\proxy\ClientProxy.java" md5: 3dace0baac74b359079dee6d62a01df5
+Cache Hit!
+@|com\ethanarns\nostalgiatize\proxy\ClientProxy.java|8|41|com.ethanarns.nostalgiatize.proxy|package|com.ethanarns.nostalgiatize.proxy|(file)
+Class Start: com.ethanarns.nostalgiatize.proxy.ClientProxy
+   @|com\ethanarns\nostalgiatize\proxy\ClientProxy.java|57|68|ClientProxy|class|com.ethanarns.nostalgiatize.proxy.ClientProxy
+   @|com\ethanarns\nostalgiatize\proxy\ClientProxy.java|80|91|CommonProxy|class|com.ethanarns.nostalgiatize.proxy.CommonProxy
+Class End  : com.ethanarns.nostalgiatize.proxy.ClientProxy
+endProcessing "com\ethanarns\nostalgiatize\proxy\ClientProxy.java"
+
+startProcessing "com\ethanarns\nostalgiatize\proxy\CommonProxy.java" md5: 0033ade2f1d658405910bfe5d1f7dc65
+Cache Hit!
+@|com\ethanarns\nostalgiatize\proxy\CommonProxy.java|8|41|com.ethanarns.nostalgiatize.proxy|package|com.ethanarns.nostalgiatize.proxy|(file)
+Class Start: com.ethanarns.nostalgiatize.proxy.CommonProxy
+   @|com\ethanarns\nostalgiatize\proxy\CommonProxy.java|61|72|CommonProxy|class|com.ethanarns.nostalgiatize.proxy.CommonProxy
+Class End  : com.ethanarns.nostalgiatize.proxy.CommonProxy
+endProcessing "com\ethanarns\nostalgiatize\proxy\CommonProxy.java"
+
+startProcessing "com\ethanarns\nostalgiatize\proxy\ServerProxy.java" md5: 05e2a2dff3ceb059342d93892222f43a
+Cache Hit!
+@|com\ethanarns\nostalgiatize\proxy\ServerProxy.java|8|41|com.ethanarns.nostalgiatize.proxy|package|com.ethanarns.nostalgiatize.proxy|(file)
+Class Start: com.ethanarns.nostalgiatize.proxy.ServerProxy
+   @|com\ethanarns\nostalgiatize\proxy\ServerProxy.java|57|68|ServerProxy|class|com.ethanarns.nostalgiatize.proxy.ServerProxy
+   @|com\ethanarns\nostalgiatize\proxy\ServerProxy.java|80|91|CommonProxy|class|com.ethanarns.nostalgiatize.proxy.CommonProxy
+Class End  : com.ethanarns.nostalgiatize.proxy.ServerProxy
+endProcessing "com\ethanarns\nostalgiatize\proxy\ServerProxy.java"
+

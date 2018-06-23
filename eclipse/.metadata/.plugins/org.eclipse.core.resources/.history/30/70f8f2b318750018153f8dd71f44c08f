@@ -1,0 +1,11 @@
+package com.ethanarns.nostalgiatize;
+
+public class NostalgiaTize {
+
+@mod(modid = ModInfo.MOD_ID, name = ModInfo.NAME, version = ModInfo.VERSION, acceptedMinecraftVersions = ModInfo.ACCEPTEDMINECRAFTVERSIONS);
+
+public class NostalgiaTize {
+	
+}
+	
+}

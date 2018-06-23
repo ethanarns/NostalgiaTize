@@ -1,0 +1,18 @@
+package com.ethanarns.nostalgiatize;
+
+import com.ethanarns.nostalgiatize.proxy.CommonProxy;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+import net.minecraftforge.fml.common.SidedProxy;
+
+@Mod(modid = ModInfo.MOD_ID, name = ModInfo.NAME, version = ModInfo.VERSION, acceptedMinecraftVersions = ModInfo.ACCEPTED_VERSIONS)
+public class NostalgiaTize {
+	
+	@Instance
+	public static NostalgiaTize instance;
+	
+	@SidedProxy(clientSide = ModInfo.CLIENT_PROXY_CLASS, serverSide = ModInfo.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
+	
+}
